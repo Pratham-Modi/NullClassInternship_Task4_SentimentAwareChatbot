@@ -33,16 +33,17 @@ This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detec
 Task4_SentimentChatbot/
 │
 ├── data/
-│   └── sentiment_dataset.csv     # Final 30,000-line dataset
+│   └── sentiment_dataset.csv        # Final 30,000-line dataset for training
 │
 ├── src/
-│   └── sentiment_logic.py        # Preprocessing and prediction logic
+│   └── sentiment_logic.py           # Preprocessing and prediction logic used in app
 │
-├── app.py                        # Streamlit UI and chatbot logic
-├── sentiment_model.pkl           # Trained model, vectorizer, label encoder
-├── requirements.txt              # Dependencies
-├── .gitignore                    # Ignored files
-└── README.md                     # Project overview (this file)
+├── sentiment_model.ipynb            # Jupyter notebook for model training, evaluation, and prediction
+├── sentiment_model.pkl              # Saved trained model, vectorizer, label encoder
+├── app.py                          # Streamlit UI and chatbot logic
+├── requirements.txt                # Dependencies
+├── .gitignore                     # Ignored files
+└── README.md                      # Project overview and instructions
 ```
 
 ---
@@ -52,7 +53,7 @@ Task4_SentimentChatbot/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/NullClassInternship_Task4_SentimentChatbot.git
+git clone https://github.com/Pratham-Modi/NullClassInternship_Task4_SentimentAwareChatbot
 cd NullClassInternship_Task4_SentimentChatbot
 ```
 
@@ -129,4 +130,3 @@ matplotlib
 
 **Pratham Modi**  
 📅 July 2025 
----
