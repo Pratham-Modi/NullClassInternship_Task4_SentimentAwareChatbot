@@ -1,6 +1,6 @@
 # 🤖 Task 4: Sentiment-Aware Chatbot
 
-This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detects emotions from user input and responds with empathetic, context-appropriate replies. Built with **Streamlit**, it leverages a machine learning pipeline trained on **30,000 high-quality samples** and supports **positive**, **neutral**, and **negative** sentiment detection.
+This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detects emotions from user input and responds with empathetic, context-appropriate replies. Built with **Streamlit**, it leverages a machine learning pipeline trained on **15,000 high-quality samples** and supports **positive**, **neutral**, and **negative** sentiment detection.
 
 ---
 
@@ -10,7 +10,7 @@ This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detec
 - 🧠 **Scikit-learn** – TF-IDF + Logistic Regression for sentiment classification  
 - 🧹 **NLTK** – Lemmatization and preprocessing  
 - 📊 **Seaborn/Matplotlib** – Confusion matrix for evaluation  
-- 🧠 **Custom dataset** – 30k samples with rich tone diversity  
+- 🧠 **Custom dataset** – 15k samples with rich tone diversity  
 - 🧾 **Pickle** – Model + Vectorizer persistence  
 
 ---
@@ -20,7 +20,7 @@ This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detec
 ✅ Real-time chatbot with sentiment-based dynamic responses  
 ✅ Handles subtle expressions, sarcasm, and nuanced tones  
 ✅ Clean UI with color-coded replies, emoji support, and chat history  
-✅ 30K-line dataset (15K base + 15K synthetic enhancements)  
+✅ 15K-line dataset 
 ✅ Robust text preprocessing (stopwords, lemmatization, n-grams)  
 ✅ Confidence-aware response logic (hidden from UI)  
 ✅ Easy to retrain with new data  
@@ -33,7 +33,7 @@ This project is an intelligent, real-time **Sentiment-Aware Chatbot** that detec
 Task4_SentimentChatbot/
 │
 ├── data/
-│   └── sentiment_dataset.csv        # Final 30,000-line dataset for training
+│   └── sentiment_dataset.csv        # Final 15,000-line dataset for training
 │
 ├── src/
 │   └── sentiment_logic.py           # Preprocessing and prediction logic used in app
@@ -97,8 +97,8 @@ streamlit run app.py
 
 - **Algorithm:** Logistic Regression  
 - **Vectorizer:** TF-IDF with n-grams (1,2), stopword removal, sublinear TF  
-- **Accuracy:** ~100% on test set (clean, balanced data)  
-- **Dataset:** 30,000 entries with realistic tones (neutral/contrastive/sarcastic)  
+- **Accuracy:** ~85% on test set (clean, balanced data)  
+- **Dataset:** 15,000 entries with realistic tones (neutral/contrastive/sarcastic)  
 - **Preprocessing:**
   - Stopword removal (via `sklearn`)
   - Lemmatization (via `nltk`)
